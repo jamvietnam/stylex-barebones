@@ -1,0 +1,83 @@
+<!--.l-header region -->
+<header role="banner" class="l-header">
+  <nav class="navbar navbar-maggi navbar-fixed-top" role="navigation-demo" id="demo-navbar">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="dist/images/svg/maggi_logo.svg" alt="Maggi Styleguide">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation-example-2">
+        <ul class="nav navbar-nav">
+          {% for item in main_menu %}
+          <li><a href="{{ item.path }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+                <i class="fa fa-facebook-square"></i>
+                Facebook
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="fa fa-envelope"></i>
+                Email
+            </a>
+          </li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Account
+            <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <div class="navbar-content">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="http://placehold.it/120x120"
+                                    alt="Alternate Text" class="img-responsive" />
+                                <p class="text-center small">
+                                    <a href="#">Change Photo</a></p>
+                            </div>
+                            <div class="col-md-7">
+                                <span>Bhaumik Patel</span>
+                                <p class="text-muted small">
+                                    mail@gmail.com</p>
+                                <div class="divider">
+                                </div>
+                                <a href="#" class="btn btn-primary btn-sm active">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-footer">
+                        <div class="navbar-footer-content">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="#" class="btn btn-default btn-sm">Change Passowrd</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="http://www.jquery2dotnet.com" class="btn btn-default btn-sm pull-right">Sign Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+              </ul>
+            </li>
+         </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-->
+  </nav>
+</header>

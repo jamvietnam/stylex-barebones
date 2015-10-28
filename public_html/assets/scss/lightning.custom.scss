@@ -28,6 +28,10 @@ form {
 .row {
   max-width: $row-width;
 }
+.row.row-fullwidth {
+  width: 100%;
+  max-width: 100%;
+}
 
 .clearing-assembled .clearing-container .visible-img {
   background: #333;
@@ -104,7 +108,7 @@ a {
 
 //hero
 .hero-bg {
-  background-image: url(../images/my_tasty_dish.jpg);
+  background-image: url(../images/hero/home-hero.jpg);
   background-position: center center;
   background-size: cover;
   height: rem-calc(600px);
@@ -295,9 +299,9 @@ body {
 .l-header {
     background: $primary-color;
 }
-.contain-to-grid {
-  background: $primary-color;
-}
+// .contain-to-grid {
+//   background: $primary-color;
+// }
 body {
   background: url(../images/bg-texture/paper-sktech.jpg) repeat center center;
 }
@@ -397,4 +401,23 @@ body {
 
 .button {
 
+}
+
+.pane-recipes-panel-pane-1 {
+  background: url('../images/bg-texture/light-wood-texture.jpg') repeat;
+  padding: 40px;
+  h2 {
+    text-align: center;
+    color: $maggi-primary;
+    font-size: 2.8em;
+  }
+  .recipes-panel-wrapper {
+    margin: 0 auto;
+    max-width: 75em;
+    }
+  }
+.products-footer {
+  max-width: 100%;
+  overflow: hidden;
+  height: 480px;
 }

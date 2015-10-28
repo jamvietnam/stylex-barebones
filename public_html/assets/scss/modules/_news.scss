@@ -10,7 +10,7 @@
 
 
 .hero-bg {
-  
+
   .page-header{
        margin-top: 0;
        font-size: 3em;
@@ -22,14 +22,14 @@
      }
   }
 
-} 
+}
 
 
 .hero-bg.news-hero-bg{
     .banner-content-wrap{
       top:20%;
     }
-    
+
     .page-header{
       font-size: 4em;
       line-height: 1.2;
@@ -43,26 +43,23 @@
 .news{
 
     margin-bottom: 40px;
-
+    .picbox {
+      padding: 10px 0 0px 50px;
+    }
     .image{
       background: #fff;
       border: 8px solid #fff;
       position: relative;
       z-index: 1;
-      -webkit-box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
-      -moz-box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
-      box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
-
-      a {
-        display: block;
-      }
+      box-shadow: 2px 2px 5px -1px rgba(166,166,166,0.7);
+      transform: rotate(-2deg);
     }
 
     .small-4{
       position: relative;
     }
 
-    
+
 
 
     .bagde{
@@ -99,9 +96,10 @@
     }
 
     .meta{
-        color: #ccc;
+        color: $blue-grey-500;
         font-size: 0.875em;
         margin-bottom:5px;
+        margin-top: -0.5em;
     }
 
     .description{
@@ -111,16 +109,16 @@
 
     .footer{
       .right{
-       
+
       }
     }
 
     &.featured{
-      
+
       .title{
         margin-top: 20px;
       }
-     
+
     }
 
 }
@@ -131,7 +129,7 @@
 /* NEWS DETAIL*/
 
 .post{
-  header .title { 
+  header .title {
 
     font-size:3em;
 
@@ -143,7 +141,7 @@
   .post-content a{
      color: $maggi-primary;
       font-family: $roboto-slab;
-      
+
   }
 
 }
@@ -176,10 +174,10 @@
 }
 
 
-@media only screen and (min-width: 40.063em) { 
+@media only screen and (min-width: 40.063em) {
 
   .mag-featured-news{
-    
+
   }
 
   .news.mag-featured-news{
@@ -198,7 +196,7 @@
       background: url('../../dist/images/pencil.png') no-repeat 0 0;
       position: absolute;
       height: 320px;
-      right: -21px;
+      right: -30px;
       top: 0;
       width: 52px;
       z-index: 0;
@@ -207,20 +205,20 @@
 
 } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 64.063em) { 
+@media only screen and (min-width: 64.063em) {
 
      /*NEWS LAYOUT*/
-  
+
 
 } /* min-width 1025px, large screens */
 
-@media only screen and (min-width: 90.063em) { 
+@media only screen and (min-width: 90.063em) {
    /*NEWS LAYOUT*/
- 
+
 
 } /* min-width 1441px, xlarge screens */
 
-@media only screen and (min-width: 120.063em) { 
+@media only screen and (min-width: 120.063em) {
 
 
   } /* min-width 1921px, xxlarge screens */

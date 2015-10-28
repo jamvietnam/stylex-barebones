@@ -1,10 +1,11 @@
 .card{
   @extend .z-depth-5;
-  
+
     border-radius: $global-radius;
     // box-shadow: 0 1px 4px rgba(0,0,0,.23);
     background-color: #FFFFFF;
     margin-bottom: 20px;
+    position: relative;
 
     .image{
         width: 100%;
@@ -60,12 +61,16 @@
         //color: $black-color;
         //font-weight: $font-weight-light;
     }
-    .avatar{
-        width: 30px;
-        height: 30px;
+    .user-picture{
+        width: 36px;
+        height: 36px;
         overflow: hidden;
         border-radius: 50%;
         margin-right: 5px;
+        img {
+          width: 100%;
+          height: auto;
+        }
     }
     .description{
         font-size: $font-size-base;
@@ -548,6 +553,6 @@
   padding-top: 40px;
 }
 .recipes-panel-wrapper {
-  background: URL('../images/bg-texture/linedpaper.jpg') repeat top center;
-  padding: rem-calc(40px);
-}
+/*   background: URL('../images/bg-texture/linedpaper.jpg') repeat top center;
+padding: rem-calc(40px);
+ */}

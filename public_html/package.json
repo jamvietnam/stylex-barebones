@@ -14,6 +14,7 @@
     "grunt-drush": "*",
     "grunt-newer": "^1.1.1",
     "grunt-sass": "^1.0.0",
+    "grunt-sync": "^0.4.1",
     "grunt-verbosity": "^0.2.2",
     "load-grunt-tasks": "~0.6.0",
     "node-bourbon": "1.2.3",

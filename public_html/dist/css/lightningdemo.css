@@ -18210,10 +18210,10 @@ th.hide-for-touch {
 }
 .top-bar .top-bar-section ul li,
 .top-bar .top-bar-section ul li:hover {
-  background-color: transparent;
+  background: transparent;
 }
 .top-bar section li:not(.has-form) a:not(.button) {
-  background-color: transparent;
+  background: transparent;
   color: #f03f22;
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -18221,25 +18221,26 @@ th.hide-for-touch {
   line-height: 1.2em;
   font-weight: 700;
   text-align: center;
-  height: 120px;
+  background: transparent;
 }
 .top-bar section li:not(.has-form) a:not(.button).menu_icon {
+  background: transparent;
   display: block;
-  padding-top: 55px;
+  padding-top: 60px;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 10px;
 }
 .top-bar section li:not(.has-form) a:not(.button):hover {
   background-color: transparent;
-  background-position: center -6px;
+  background-position: center -3px;
 }
-.top-bar a.menu-1532 {
+.top-bar section li:not(.has-form) a:not(.button) .menu-1532 {
   background-image: url(../images/icons/news-icon.png);
 }
-.top-bar a.menu-1533 {
+.top-bar section li:not(.has-form) a:not(.button) .menu-1533 {
   background-image: url(../images/icons/product-icon.png);
 }
-.top-bar a.menu-1534 {
+.top-bar section li:not(.has-form) a:not(.button) .menu-1534 {
   background-image: url(../images/icons/recipe-icon.png);
 }
 .top-bar .logo, .top-bar .name {
@@ -18273,19 +18274,19 @@ th.hide-for-touch {
   padding-bottom: 0;
 }
 
+.contain-to-grid {
+  background: #ffed00;
+}
+.contain-to-grid .top-bar {
+  max-width: 70rem;
+  margin: 0 auto;
+  margin-bottom: 0;
+  background: #ffed00;
+}
+
 /*
    TOPBAR STICKY HEIGHT
    ========================================================================== */
-.f-topbar-fixed .top-bar .logo a {
-  width: 120px;
-  height: 64px;
-  overflow: hidden;
-  display: block;
-}
-.f-topbar-fixed .top-bar .logo a img {
-  margin: -6px 0 0 0;
-}
-
 .top-bar.expanded {
   background: #fff240;
 }
@@ -18698,6 +18699,71 @@ a.left-peel:hover:after {
     opacity: 1;
   }
 }
+/*TABS*/
+.has-border {
+  border-bottom: 2px solid #cc2229;
+}
+
+.tabs dd > a, .tabs .tab-title > a {
+  background: none;
+  position: relative;
+  color: #917335;
+  font-weight: bold;
+  font-size: 16px;
+}
+.tabs dd > a:hover, .tabs .tab-title > a:hover {
+  background: none;
+}
+.tabs dd.active a, .tabs .tab-title.active a {
+  background: none;
+  color: #cc2229;
+  font-weight: bold;
+}
+.tabs dd.active a:after, .tabs dd.active a:before, .tabs .tab-title.active a:after, .tabs .tab-title.active a:before {
+  bottom: -2px;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.tabs dd.active a:after, .tabs .tab-title.active a:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-bottom-color: #fef0cb;
+  border-width: 9px;
+  margin-left: -9px;
+}
+.tabs dd.active a:before, .tabs .tab-title.active a:before {
+  border-color: rgba(204, 34, 41, 0);
+  border-bottom-color: #cc2229;
+  border-width: 12px;
+  margin-left: -12px;
+}
+
+/*SEARCH*/
+.search-wrap input[type="text"] {
+  border-right: 0;
+  border-color: #cc2229;
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-radius-topleft: 30px;
+  -moz-border-radius-bottomleft: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding-left: 20px;
+}
+.search-wrap .postfix.button {
+  -webkit-border-top-right-radius: 30px;
+  -webkit-border-bottom-right-radius: 30px;
+  -moz-border-radius-topright: 30px;
+  -moz-border-radius-bottomright: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+/*CARD THREAD*/
 .card.thread {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -18761,11 +18827,17 @@ button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-bu
   padding: 10px 30px;
 }
 
+/*delete after*/
+.navbar-collapse {
+  display: none !important;
+}
+
 .text-red {
   color: #cc2229;
 }
 
 .hero-bg .page-header {
+  margin-top: 0;
   font-size: 3em;
   border: 0;
   text-shadow: 1px 1px 5px black;
@@ -18774,15 +18846,30 @@ button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-bu
   color: #ffed00;
 }
 
+.hero-bg.news-hero-bg .banner-content-wrap {
+  top: 20%;
+}
+.hero-bg.news-hero-bg .page-header {
+  font-size: 4em;
+  line-height: 1.2;
+}
+
 .news {
   margin-bottom: 40px;
 }
+.news .picbox {
+  padding: 10px 0 0px 50px;
+}
 .news .image {
+  background: #fff;
   border: 8px solid #fff;
   position: relative;
-  -webkit-box-shadow: 2px 2px 5px -1px #a6a6a6;
-  -moz-box-shadow: 2px 2px 5px -1px #a6a6a6;
-  box-shadow: 2px 2px 5px -1px #a6a6a6;
+  z-index: 1;
+  box-shadow: 2px 2px 5px -1px rgba(166, 166, 166, 0.7);
+  transform: rotate(-2deg);
+}
+.news .small-4 {
+  position: relative;
 }
 .news .bagde {
   background: #cc2229;
@@ -18816,16 +18903,14 @@ button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-bu
   margin-top: 30px;
 }
 .news .meta {
-  color: #ccc;
+  color: #607d8b;
   font-size: 0.875em;
   margin-bottom: 5px;
+  margin-top: -0.5em;
 }
 .news .description {
   font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: 300;
-}
-.news .footer .right {
-  color: #333;
 }
 .news.featured .title {
   margin-top: 20px;
@@ -18844,6 +18929,59 @@ button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-bu
   font-family: "Roboto Slab", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
+/*NEWS LAYOUT*/
+.news.mag-featured-news {
+  background: #fff;
+  margin-top: -20%;
+  margin-bottom: 20px;
+}
+
+.home.mag-featured-news {
+  background: none;
+}
+
+.news-horizon-list .news .title {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.news-horizon-list .news .image {
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+}
+
+@media only screen and (min-width: 40.063em) {
+  .news.mag-featured-news {
+    margin-top: -300px;
+    margin-bottom: 50px;
+  }
+
+  .news-horizon-list .news .content, .news-horizon-list .news .footer {
+    padding-left: 30px;
+  }
+
+  .pen {
+    background: url("../../dist/images/pencil.png") no-repeat 0 0;
+    position: absolute;
+    height: 320px;
+    right: -30px;
+    top: 0;
+    width: 52px;
+    z-index: 0;
+  }
+}
+/* min-width 641px, medium screens */
+@media only screen and (min-width: 64.063em) {
+  /*NEWS LAYOUT*/
+}
+/* min-width 1025px, large screens */
+@media only screen and (min-width: 90.063em) {
+  /*NEWS LAYOUT*/
+}
+/* min-width 1441px, xlarge screens */
+/* min-width 1921px, xxlarge screens */
 .droppable-browse-button {
   text-transform: uppercase;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -18939,8 +19077,8 @@ button:hover, .droppable-browse-button:hover, button:focus, .droppable-browse-bu
   height: auto;
 }
 
-.search-panel-section {
-  background: url("../images/bg-texture/wood_white_v.jpg") repeat;
+.search-block-row {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .search-cat-nav {
@@ -22211,6 +22349,7 @@ input.ct-red + span + label + span.switch-right {
   border-radius: 6px;
   background-color: #FFFFFF;
   margin-bottom: 20px;
+  position: relative;
 }
 .card .image {
   width: 100%;
@@ -22255,12 +22394,16 @@ input.ct-red + span + label + span.switch-right {
   color: rgba(0, 0, 0, 0.54);
   margin-bottom: 0px;
 }
-.card .avatar {
-  width: 30px;
-  height: 30px;
+.card .user-picture {
+  width: 36px;
+  height: 36px;
   overflow: hidden;
   border-radius: 50%;
   margin-right: 5px;
+}
+.card .user-picture img {
+  width: 100%;
+  height: auto;
 }
 .card .description {
   font-size: 14px;
@@ -22727,8 +22870,9 @@ input, .signup-panel span {
 }
 
 .recipes-panel-wrapper {
-  background: URL("../images/bg-texture/linedpaper.jpg") repeat top center;
-  padding: 2.5rem;
+  /*   background: URL('../images/bg-texture/linedpaper.jpg') repeat top center;
+  padding: rem-calc(40px);
+   */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22758,6 +22902,11 @@ form {
 
 .row {
   max-width: 75rem;
+}
+
+.row.row-fullwidth {
+  width: 100%;
+  max-width: 100%;
 }
 
 .clearing-assembled .clearing-container .visible-img {
@@ -22829,7 +22978,7 @@ a:hover {
 }
 
 .hero-bg {
-  background-image: url(../images/my_tasty_dish.jpg);
+  background-image: url(../images/hero/home-hero.jpg);
   background-position: center center;
   background-size: cover;
   height: 37.5rem;
@@ -23007,10 +23156,6 @@ body {
   background: #ffed00;
 }
 
-.contain-to-grid {
-  background: #ffed00;
-}
-
 body {
   background: url(../images/bg-texture/paper-sktech.jpg) repeat center center;
 }
@@ -23018,7 +23163,7 @@ body {
 .mag-featured-news {
   padding-top: 2em;
   padding-bottom: 2em;
-  background: url("../images/bg2.jpg") repeat;
+  /*background: url('../images/bg2.jpg') repeat;*/
 }
 
 .mag-featured-dish {
@@ -23083,6 +23228,26 @@ body {
 
 .dropdown-menu {
   transition: all 300ms linear;
+}
+
+.pane-recipes-panel-pane-1 {
+  background: url("../images/bg-texture/light-wood-texture.jpg") repeat;
+  padding: 40px;
+}
+.pane-recipes-panel-pane-1 h2 {
+  text-align: center;
+  color: #cc2229;
+  font-size: 2.8em;
+}
+.pane-recipes-panel-pane-1 .recipes-panel-wrapper {
+  margin: 0 auto;
+  max-width: 75em;
+}
+
+.products-footer {
+  max-width: 100%;
+  overflow: hidden;
+  height: 480px;
 }
 
 /*# sourceMappingURL=lightningdemo.css.map */
