@@ -1,3 +1,90 @@
+/*TABS*/
+
+.has-border{
+
+	border-bottom:2px solid $maggi-primary;
+}
+
+.tabs{
+
+
+	dd > a, .tab-title > a	{
+		background: none;
+		position: relative;
+		color: #917335;
+		font-weight: bold;
+		font-size: 16px;
+	}
+
+	dd > a:hover, .tab-title > a:hover{
+		background: none;
+	}
+
+	dd.active a, .tab-title.active a{
+		background: none;
+		color: $maggi-primary;
+		font-weight: bold;
+
+
+		&:after, &:before {
+			bottom: -2px;
+			left: 50%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+
+
+		&:after {
+			border-color: rgba(136, 183, 213, 0);
+			border-bottom-color: #fef0cb;
+			border-width: 9px;
+    		margin-left: -9px;
+		}
+		&:before {
+			border-color: rgba(204, 34, 41, 0);
+			border-bottom-color: $maggi-primary;
+			border-width: 12px;
+    		margin-left: -12px;
+		}
+
+	}
+}
+
+
+/*SEARCH*/
+
+.search-wrap{
+
+	input[type="text"]{
+		border-right:0;
+		border-color:  $maggi-primary;
+		-webkit-border-top-left-radius: 30px;
+		-webkit-border-bottom-left-radius: 30px;
+		-moz-border-radius-topleft: 30px;
+		-moz-border-radius-bottomleft: 30px;
+		border-top-left-radius: 30px;
+		border-bottom-left-radius: 30px;
+		padding-left: 20px;
+	}
+
+	.postfix.button{
+		-webkit-border-top-right-radius: 30px;
+		-webkit-border-bottom-right-radius: 30px;
+		-moz-border-radius-topright: 30px;
+		-moz-border-radius-bottomright: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+
+}
+
+
+/*CARD THREAD*/
 .card.thread{
 
 	-webkit-border-radius: 0;
@@ -31,8 +118,6 @@
         font-weight: 300;
 	}
 
-
-
 	&.comment{
 		
 		background-color:$maggi-secondary;
@@ -40,3 +125,5 @@
 
 	}
 }
+
+

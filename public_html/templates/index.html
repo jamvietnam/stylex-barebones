@@ -23,13 +23,11 @@
 
   {% block content %}
 
-    <section class="mag-featured-news">
-      <div class="row">
-        {% for article in content.articles %}
-          {% if loop.index < 2 %}
-           {% include 'components/feature_news.twig' with article only %}
-          {% endif %}
-        {% endfor %}
+    <section class="home mag-featured-news">
+      <div class="row news-horizon-list">
+  
+        {% include 'components/feature_home_news.twig' %}
+         
       </div>
     </section>
     <!-- .section-1 -->

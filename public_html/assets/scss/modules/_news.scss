@@ -1,12 +1,18 @@
-.text-red{
-    
-    color: $maggi-primary;
+/*delete after*/
+.navbar-collapse{
+  display: none !important;
 }
+
+.text-red{
+   color: $maggi-primary;
+}
+
+
 
 .hero-bg {
   
   .page-header{
-       
+       margin-top: 0;
        font-size: 3em;
        border: 0;
        text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
@@ -18,18 +24,47 @@
 
 } 
 
+
+.hero-bg.news-hero-bg{
+    .banner-content-wrap{
+      top:20%;
+    }
+    
+    .page-header{
+      font-size: 4em;
+      line-height: 1.2;
+    }
+}
+
+
+
+
+
 .news{
 
     margin-bottom: 40px;
 
     .image{
+      background: #fff;
       border: 8px solid #fff;
       position: relative;
+      z-index: 1;
       -webkit-box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
       -moz-box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
       box-shadow: 2px 2px 5px -1px rgba(166,166,166,1);
 
+      a {
+        display: block;
+      }
     }
+
+    .small-4{
+      position: relative;
+    }
+
+    
+
+
     .bagde{
         background: $maggi-primary;
         width: 100px;
@@ -76,7 +111,7 @@
 
     .footer{
       .right{
-        color: #333;
+       
       }
     }
 
@@ -89,6 +124,7 @@
     }
 
 }
+
 
 
 
@@ -112,4 +148,79 @@
 
 }
 
+/*NEWS LAYOUT*/
+.news.mag-featured-news{
+  background: #fff;
 
+  margin-top: -20%;
+  margin-bottom: 20px;
+}
+
+.home.mag-featured-news{
+  background:none;
+}
+
+.news-horizon-list{
+    .news .title{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+
+    .news .image{
+        transform: rotate(-2deg) ;
+        -webkit-transform: rotate(-2deg) ;
+        -moz-transform: rotate(-2deg) ;
+        -o-transform: rotate(-2deg) ;
+        -ms-transform: rotate(-2deg) ;
+    }
+}
+
+
+@media only screen and (min-width: 40.063em) { 
+
+  .mag-featured-news{
+    
+  }
+
+  .news.mag-featured-news{
+    margin-top: -300px;
+    margin-bottom:50px;
+  }
+
+
+  .news-horizon-list{
+      .news .content,.news .footer{
+          padding-left: 30px;
+      }
+  }
+
+  .pen{
+      background: url('../../dist/images/pencil.png') no-repeat 0 0;
+      position: absolute;
+      height: 320px;
+      right: -21px;
+      top: 0;
+      width: 52px;
+      z-index: 0;
+    }
+
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 64.063em) { 
+
+     /*NEWS LAYOUT*/
+  
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 90.063em) { 
+   /*NEWS LAYOUT*/
+ 
+
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 120.063em) { 
+
+
+  } /* min-width 1921px, xxlarge screens */
