@@ -1,0 +1,42 @@
+.card.thread{
+
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+
+	.avatar{
+
+
+		.thumbnail{
+			display: inline-block;
+			margin-top: 30px;
+			margin-bottom:20px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+		}
+
+
+	}
+
+	.content p{
+		font-family: $roboto-slab;
+        font-weight: 300;
+	}
+
+	.card-link{
+		color: $maggi-primary;
+		font-family: $roboto-slab;
+        font-weight: 300;
+	}
+
+
+
+	&.comment{
+		
+		background-color:$maggi-secondary;
+		margin-top:30px;
+
+	}
+}

@@ -1,0 +1,43 @@
+{% extends "styleguide_base.twig" %}
+  {% block hero %}
+    <section class="hero-bg">
+      <div class="banner-content-wrap">
+        <div class="row">
+          <div class="large-6 large-offset-3">
+            <h3 class="title-uppercase">THE LATEST NEWS</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .hero-bg -->
+
+    {% include 'includes/searchblock.twig' %}
+    <!-- .search-panel -->
+  {% endblock %}
+
+
+
+  {% block content %}
+
+    <section class="mag-featured-news">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="quaternary-features-region clearfix">
+
+            {% for post in content.articles %}
+              {% include 'components/feature_news.twig' with post only %}
+            {% endfor %}
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .section-1 -->
+
+    <section class="container mag-featured-products">
+
+      {% include 'components/product_footer.twig' %}
+
+    </section>
+    <!-- .products-footer -->
+  {% endblock %}

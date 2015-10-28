@@ -1,0 +1,337 @@
+// Non-modular or client styles for .l-header region.
+
+.top-bar {
+	background:$primary-color;
+	height:$topbar-height;
+	line-height:$topbar-height;
+	padding-left:rem-calc(15px);
+  * {
+    transition: all 0.2s ease;
+  }
+  .top-bar-section ul li,
+  .top-bar-section ul li:hover
+  {
+    background-color: transparent;
+  }
+	section li:not(.has-form) a:not(.button) {
+    background-color: transparent;
+    color: $secondary-color;
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    font-size: $base-font-size;
+    line-height: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    height: 120px;
+    &.menu_icon {
+      display: block;
+      padding-top: 55px;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    &:hover {
+      background-color: transparent;
+      background-position: center -6px;
+    }
+	}
+  a.menu-1532 {
+    background-image: url(../images/icons/news-icon.png);
+  }
+  a.menu-1533 {
+    background-image: url(../images/icons/product-icon.png);
+  }
+  a.menu-1534 {
+    background-image: url(../images/icons/recipe-icon.png);
+  }
+
+	.logo, .name {
+		display: table-cell;
+ 		text-align: center;
+  		vertical-align:middle;
+  		line-height: $topbar-height;
+      a {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        display: block;
+        img {
+          margin: 0;
+        }
+      }
+	}
+
+	.name h1 a {
+		font-size:1.2em;
+		line-height: $topbar-height;
+		padding: 0 5px;
+		font-weight:normal;
+		letter-spacing: 1px;
+	}
+
+	.toggle-topbar.menu-icon a {
+		height:$topbar-height;
+		line-height: $topbar-height;
+	}
+
+    ul li>a {
+    	padding-top:0;
+    	padding-bottom:0;
+    }
+
+
+}
+
+/*
+   TOPBAR STICKY HEIGHT
+   ========================================================================== */
+
+.f-topbar-fixed {
+  .top-bar {
+    .logo a {
+      width: 120px;
+      height: 64px;
+      overflow: hidden;
+      display: block;
+      img {
+        margin: -6px 0 0 0;
+      }
+    }
+  }
+}
+
+
+.top-bar.expanded {
+	background:$primary-alt;
+
+	.title-area {
+		background: $primary-alt;
+	}
+}
+
+
+// OLD BOOTSTRAP VERSION
+
+.wrapper {
+  padding-top: 100px; 
+}
+
+.logo-container .logo{
+		overflow: hidden;
+		width: 90px;
+		float: left;
+}
+	.logo-container .logo img {
+			width: 100%;
+	}
+	.navbar-fixed-top .navbar-brand {
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		transition: all .3s;
+		height: auto;
+		margin: 0px;
+		padding: 0;
+	}
+
+
+	.navbar-fixed-top.navbar-shrink {
+			padding: 0px 10px;
+	}
+	.navbar-fixed-top.navbar-shrink .logo-container .logo{
+			height: 45px;
+	}
+	.navbar-fixed-top.navbar-shrink .navbar-toggle {
+		margin: 10px;
+	}
+
+@media(min-width:768px) {
+	 .navbar-fixed-top {
+			 padding: 14px 0;
+			 -webkit-transition: padding .3s;
+			 -moz-transition: padding .3s;
+			 transition: padding .3s;
+	 }
+	 .navbar-fixed-top.navbar-shrink {
+			 padding: 0px;
+	 }
+	 .logo-container .logo{
+	 		overflow: hidden;
+	 		width: 110px;
+	 		float: left;
+	 }
+	 .navbar-fixed-top .navbar-brand {
+ 		margin: -8px 0;
+ 	}
+	 .navbar-fixed-top.navbar-shrink .navbar-brand {
+			 margin: 8px 0 0 -15px;
+	 }
+	 .navbar-fixed-top.navbar-shrink .logo-container .logo{
+			 height: 55px;
+	 }
+	 .navbar-fixed-top.navbar-shrink .navbar-nav>li>a {
+	     padding: 10px 15px;
+	     margin: 10px 3px;
+	 }
+
+}
+
+// RERE STYLE
+.navbar-maggi {
+  background-color: #ffed00;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .navbar-maggi .brand {
+    color: #66615b !important; }
+  .navbar-maggi .navbar-nav > li > a:not(.btn) {
+    color: $brand-primary; }
+  .navbar-maggi .navbar-nav > .active > a,
+  .navbar-maggi .navbar-nav > .active > a:not(.btn):hover,
+  .navbar-maggi .navbar-nav > .active > a:not(.btn):focus,
+  .navbar-maggi .navbar-nav > li > a:not(.btn):hover,
+  .navbar-maggi .navbar-nav > li > a:not(.btn):focus {
+    background-color: transparent;
+    border-radius: 3px;
+    color: #68B3C8;
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .navbar-maggi .navbar-nav > .dropdown > a:hover .caret,
+  .navbar-maggi .navbar-nav > .dropdown > a:focus .caret {
+    border-bottom-color: #68B3C8;
+    border-top-color: #68B3C8; }
+  .navbar-maggi .navbar-nav > .open > a,
+  .navbar-maggi .navbar-nav > .open > a:hover,
+  .navbar-maggi .navbar-nav > .open > a:focus {
+    background-color: transparent;
+    color: #68B3C8; }
+  .navbar-maggi .navbar-nav .navbar-toggle:hover, .navbar-maggi .navbar-nav .navbar-toggle:focus {
+    background-color: transparent; }
+  .navbar-maggi:not(.navbar-transparent) .btn-ct-maggi:hover {
+    color: #68B3C8;
+    border-color: #68B3C8; }
+  .navbar-maggi:not(.navbar-transparent) .btn-neutral, .navbar-ct-maggi:not(.navbar-transparent) .btn-neutral:hover, .navbar-ct-maggi:not(.navbar-transparent) .btn-neutral:active {
+    color: #9A9A9A; }
+
+
+	.navbar-maggi .navbar-content
+		{
+		    width:320px;
+		    padding: 15px;
+		    padding-bottom:0px;
+		}
+		.navbar-maggi .navbar-content:before, .navbar-content:after
+		{
+		    display: table;
+		    content: "";
+		    line-height: 0;
+		}
+		.navbar-maggi .navbar-nav.navbar-right:last-child {
+		margin-right: 15px !important;
+		}
+		.navbar-maggi .navbar-footer
+		{
+		    background-color:#DDD;
+		}
+		.navbar-maggi .navbar-footer-content { padding:15px 15px 15px 15px; }
+		.dropdown-menu {
+			padding: 0px;
+			overflow: hidden;
+		}
+
+		a.left-peel,a.left-peel:visited,a.left-peel:hover,a.left-peel:active {
+		  -webkit-backface-visibility:hidden;
+		          backface-visibility:hidden;
+			position:relative;
+		  transition:0.3s color ease;
+			text-decoration:none;
+			color: $maggi-primary-shade;
+		}
+		a.left-peel:hover {
+			color:$brand-primary;
+		}
+		a.left-peel:after{
+		  content: "";
+		  transition:0.3s all ease;
+		  -webkit-backface-visibility:hidden;
+		          backface-visibility:hidden;
+		  position:absolute;
+		}
+		a.left-peel:after{
+		  bottom:-0.15em;
+		}
+		a.left-peel:after{
+		  height:3px;
+		  height:0.1rem;
+		  width:0;
+		  background:$brand-primary;
+		}
+		a.left-peel:after{
+		  left:0;
+		}
+
+		a.left-peel:hover:after{
+		  width:100%;
+		}
+.join-box {
+	position: absolute;
+	bottom: 3em;
+
+}
+.rgba-8 {
+		background-color: rgba(255,255,255,0.8);
+}
+
+
+.float-label-control { position: relative; margin-bottom: 1.5em; }
+		.float-label-control ::-webkit-input-placeholder { color: transparent; }
+		.float-label-control :-moz-placeholder { color: transparent; }
+		.float-label-control ::-moz-placeholder { color: transparent; }
+		.float-label-control :-ms-input-placeholder { color: transparent; }
+		.float-label-control input:-webkit-autofill,
+		.float-label-control textarea:-webkit-autofill { background-color: transparent !important; -webkit-box-shadow: 0 0 0 1000px white inset !important; -moz-box-shadow: 0 0 0 1000px white inset !important; box-shadow: 0 0 0 1000px white inset !important; }
+		.float-label-control input, .float-label-control textarea, .float-label-control label { font-size: 1em; box-shadow: none; -webkit-box-shadow: none; }
+				.float-label-control input:focus,
+				.float-label-control textarea:focus { box-shadow: none; -webkit-box-shadow: none; border-bottom-width: 2px; padding-bottom: 0; }
+				.float-label-control textarea:focus { padding-bottom: 4px; }
+		.float-label-control input, .float-label-control textarea { display: block; width: 100%; padding: 0.1em 0em 1px 0em; border: none; border-radius: 0px; border-bottom: 1px solid #aaa; outline: none; margin: 0px; background: none; }
+		.float-label-control textarea { padding: 0.1em 0em 5px 0em; }
+		.float-label-control label { position: absolute; font-weight: normal; top: -1.0em; left: 0.08em; color: #aaaaaa; z-index: -1; font-size: 0.85em; -moz-animation: float-labels 300ms none ease-out; -webkit-animation: float-labels 300ms none ease-out; -o-animation: float-labels 300ms none ease-out; -ms-animation: float-labels 300ms none ease-out; -khtml-animation: float-labels 300ms none ease-out; animation: float-labels 300ms none ease-out; /* There is a bug sometimes pausing the animation. This avoids that.*/ animation-play-state: running !important; -webkit-animation-play-state: running !important; }
+		.float-label-control input.empty + label,
+		.float-label-control textarea.empty + label { top: 0.1em; font-size: 1.5em; animation: none; -webkit-animation: none; }
+		.float-label-control input:not(.empty) + label,
+		.float-label-control textarea:not(.empty) + label { z-index: 1; }
+		.float-label-control input:not(.empty):focus + label,
+		.float-label-control textarea:not(.empty):focus + label { color: #aaaaaa; }
+		.float-label-control.label-bottom label { -moz-animation: float-labels-bottom 300ms none ease-out; -webkit-animation: float-labels-bottom 300ms none ease-out; -o-animation: float-labels-bottom 300ms none ease-out; -ms-animation: float-labels-bottom 300ms none ease-out; -khtml-animation: float-labels-bottom 300ms none ease-out; animation: float-labels-bottom 300ms none ease-out; }
+		.float-label-control.label-bottom input:not(.empty) + label,
+		.float-label-control.label-bottom textarea:not(.empty) + label { top: 3em; }
+
+
+@keyframes float-labels {
+		0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+		20% { font-size: 1.5em; opacity: 0; }
+		30% { top: 0.1em; }
+		50% { opacity: 0; font-size: 0.85em; }
+		100% { top: -1em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels {
+		0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+		20% { font-size: 1.5em; opacity: 0; }
+		30% { top: 0.1em; }
+		50% { opacity: 0; font-size: 0.85em; }
+		100% { top: -1em; opacity: 1; }
+}
+
+@keyframes float-labels-bottom {
+		0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+		20% { font-size: 1.5em; opacity: 0; }
+		30% { top: 0.1em; }
+		50% { opacity: 0; font-size: 0.85em; }
+		100% { top: 3em; opacity: 1; }
+}
+
+@-webkit-keyframes float-labels-bottom {
+		0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+		20% { font-size: 1.5em; opacity: 0; }
+		30% { top: 0.1em; }
+		50% { opacity: 0; font-size: 0.85em; }
+		100% { top: 3em; opacity: 1; }
+}

@@ -1,0 +1,363 @@
+{% extends "styleguide_base.twig" %}
+  {% block hero %}
+    <section class="hero-bg">
+      <div class="banner-content-wrap">
+        <div class="row">
+          <div class="large-6 large-offset-3 text-center">
+            <h3 class="title-uppercase">ADD A RECIPE</h3>
+            <p>Upload you best now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .hero-bg -->
+
+    {% include 'includes/searchblock.twig' %}
+    <!-- .search-panel -->
+
+  {% endblock %}
+
+
+  {% block content %}
+
+
+  <!-- Grab the recipe cards for the homepage -->
+  <section class="mag-featured-recipes">
+
+    <div class="row">
+      <div class="medium-8 column">
+        <h2 class="text-primary">RECIPES ARCHIVE</h2>
+      </div>
+      <div class="medium-3 medium-offset-1 column">
+        <a href="#" class="button button-maggi right z-depth-2">SUBMIT A RECIPE</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="recipes-panel-wrapper z-depth-5">
+        <ul class="medium-block-grid-3">
+
+<!-- <div class="large-10 small-centered columns"> -->
+
+
+  <!-- THEME DEBUG -->
+  <!-- CALL: theme('region') -->
+  <!-- FILE NAME SUGGESTIONS:
+   * region--content.tpl.php
+   x region.tpl.php
+  -->
+  <!-- BEGIN OUTPUT from 'sites/all/themes/lightningdemo/templates/region.tpl.php' -->
+
+
+  <!-- THEME DEBUG -->
+  <!-- CALL: theme('block') -->
+  <!-- FILE NAME SUGGESTIONS:
+   * block--system--main.tpl.php
+   * block--system.tpl.php
+   * block--content.tpl.php
+   x block.tpl.php
+-->
+  <!-- BEGIN OUTPUT from 'sites/all/themes/lightningdemo/templates/block.tpl.php' -->
+
+<!--
+    <form class="node-form node-recipe-form zf-2col-stacked" enctype="multipart/form-data" action="/recipes-add" method="post" id="recipe-node-form" accept-charset="UTF-8">
+      <div>
+ -->
+      <!-- THEME DEBUG -->
+      <!-- CALL: theme('ds_forms_custom_form') -->
+      <!-- FILE NAME SUGGESTIONS:
+   * zf-2col-stacked--node-recipe.tpl.php
+   * zf-2col-stacked--node.tpl.php
+   x zf-2col-stacked.tpl.php
+   * ds-forms-custom-form.tpl.php
+-->
+      <!-- BEGIN OUTPUT from 'sites/all/themes/zurb_foundation/ds_layouts/zf_2col_stacked/zf-2col-stacked.tpl.php' -->
+      <section class="zf-2col-stacked ds-form">
+
+
+
+        <div class="">
+          <div class="group-left">
+            <div class="form-item form-type-textfield form-item-title">
+              <label for="edit-title">Title
+                <span class="form-required" title="This field is required.">*</span>
+              </label>
+              <input type="text" id="edit-title" name="title" value="" size="60" maxlength="255" class="form-text required">
+            </div>
+            <div class="field-type-taxonomy-term-reference field-name-field-category field-widget-options-select form-wrapper" id="edit-field-category">
+              <div class="form-item form-type-select form-item-field-category-und">
+                <label for="edit-field-category-und">Category </label>
+                <select id="edit-field-category-und" name="field_category[und]" class="form-select">
+                  <option value="_none">- None -</option>
+                  <option value="4">Tất cả</option>
+                  <option value="10">Sốt chấm</option>
+                  <option value="5">Món canh</option>
+                  <option value="11">Khác</option>
+                  <option value="8">Món mặn</option>
+                  <option value="9">Món thanh nhẹ</option>
+                  <option value="7">Món xào</option>
+                  <option value="6">Cuối tuần</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-type-entityreference field-name-field-maggi-ingredients field-widget-options-select form-wrapper" id="edit-field-maggi-ingredients">
+              <div class="form-item form-type-select form-item-field-maggi-ingredients-und">
+                <label for="edit-field-maggi-ingredients-und">Maggi ingredients </label>
+                <select id="edit-field-maggi-ingredients-und" name="field_maggi_ingredients[und]" class="form-select">
+                  <option value="_none">- None -</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-type-field-collection field-name-field-ingredients-collection field-widget-field-collection-embed form-wrapper" id="edit-field-ingredients-collection">
+              <div id="field-ingredients-collection-add-more-wrapper">
+                <div class="form-item">
+                  <div class="tabledrag-toggle-weight-wrapper"><a href="#" class="tabledrag-toggle-weight" title="Re-order rows by numerical weight instead of dragging.">Show row weights</a></div>
+                  <table class="sticky-header" style="position: fixed; top: 0px; left: 201px; visibility: hidden;">
+                    <thead style="">
+                      <tr>
+                        <th colspan="2" class="field-label">
+                          <label>Ingredients </label>
+                        </th>
+                        <th class="tabledrag-hide" style="display: none;">Order</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <table id="field-ingredients-collection-values" class="field-multiple-table sticky-enabled tabledrag-processed tableheader-processed sticky-table">
+                    <thead>
+                      <tr>
+                        <th colspan="2" class="field-label">
+                          <label>Ingredients </label>
+                        </th>
+                        <th class="tabledrag-hide" style="display: none;">Order</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="draggable odd">
+                        <td class="field-multiple-drag">
+                          <a href="#" class="tabledrag-handle" title="Drag to re-order">
+                            <div class="handle">&nbsp;</div>
+                          </a>
+                        </td>
+                        <td>
+                          <div class="field-type-text field-name-field-ingredient field-widget-text-textfield form-wrapper" id="edit-field-ingredients-collection-und-0-field-ingredient">
+                            <div id="field-ingredients-collection-und-0-field-ingredient-add-more-wrapper">
+                              <div class="form-item form-type-textfield form-item-field-ingredients-collection-und-0-field-ingredient-und-0-value">
+                                <label for="edit-field-ingredients-collection-und-0-field-ingredient-und-0-value">Ingredient </label>
+                                <input class="text-full form-text" type="text" id="edit-field-ingredients-collection-und-0-field-ingredient-und-0-value" name="field_ingredients_collection[und][0][field_ingredient][und][0][value]" value="" size="60" maxlength="255">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="field-type-text field-name-field-quantity field-widget-text-textfield form-wrapper" id="edit-field-ingredients-collection-und-0-field-quantity">
+                            <div id="field-ingredients-collection-und-0-field-quantity-add-more-wrapper">
+                              <div class="form-item form-type-textfield form-item-field-ingredients-collection-und-0-field-quantity-und-0-value">
+                                <label for="edit-field-ingredients-collection-und-0-field-quantity-und-0-value">Quantity </label>
+                                <input class="text-full form-text" type="text" id="edit-field-ingredients-collection-und-0-field-quantity-und-0-value" name="field_ingredients_collection[und][0][field_quantity][und][0][value]" value="" size="60" maxlength="255">
+                              </div>
+                            </div>
+                          </div>
+                          <button id="edit-field-ingredients-collection-und-0-remove-button" name="field_ingredients_collection_und_0_remove_button" value="Remove" type="submit" class="form-submit ajax-processed">Remove</button>
+                        </td>
+                        <td class="delta-order tabledrag-hide" style="display: none;">
+                          <div class="form-item form-type-select form-item-field-ingredients-collection-und-0--weight">
+                            <label class="element-invisible" for="edit-field-ingredients-collection-und-0-weight">Weight for row 1 </label>
+                            <select class="field_ingredients_collection-delta-order form-select" id="edit-field-ingredients-collection-und-0-weight" name="field_ingredients_collection[und][0][_weight]">
+                              <option value="0" selected="selected">0</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="clearfix">
+                    <button class="field-add-more-submit form-submit ajax-processed" id="edit-field-ingredients-collection-und-add-more" name="field_ingredients_collection_add_more" value="Add another item" type="submit">Add another item</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="field-type-text-long field-name-field-directions field-widget-text-textarea form-wrapper" id="edit-field-directions">
+              <div id="field-directions-add-more-wrapper">
+                <div class="text-format-wrapper">
+                  <div class="form-item form-type-textarea form-item-field-directions-und-0-value">
+                    <label for="edit-field-directions-und-0-value">Directions
+                      <span class="form-required" title="This field is required.">*</span>
+                    </label>
+                    <div class="form-textarea-wrapper">
+                      <textarea class="text-full form-textarea required resize-vertical" id="edit-field-directions-und-0-value" name="field_directions[und][0][value]" cols="60" rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="filter-wrapper form-wrapper" id="edit-field-directions-und-0-format"></div>
+                  <div class="description">
+                    <span data-tooltip="" data-options="disable-for-touch:true" class="has-tip tip-top" title="Please describe the step to follow when preparing this recipe.">More information?</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="group-right">
+
+            <div class="field-type-image field-name-field-image field-widget-dragndrop-upload-image form-wrapper" id="edit-field-image">
+              <div id="edit-field-image-und-0-ajax-wrapper">
+                <div class="form-item form-type-dragndrop-upload form-item-field-image-und-0">
+                  <label for="edit-field-image-und-0-upload">Featured Image
+                    <span class="form-required" title="This field is required.">*</span>
+                  </label>
+                  <div class="image-widget form-managed-file clearfix">
+                    <div class="image-widget-data">
+
+                      <!-- THEME DEBUG -->
+                      <!-- CALL: theme('dnd_upload_droppable_area_image') -->
+                      <!-- BEGIN OUTPUT from 'sites/all/modules/dragndrop_upload/modules/dragndrop_upload_image/templates/dnd-upload-droppable-area-image.tpl.php' -->
+                      <div class="droppable droppable-image dnd-upload-processed dnd-upload-element-processed dnd-upload-image-processed" id="droppable-field-image-und-0">
+                        <div class="droppable-preview">
+                          <div class="droppable-preview-image">
+                            <div class="preview-remove">x</div>
+                            <img>
+                          </div>
+                        </div>
+                        <div class="droppable-message">
+                          <h3>Drop here to upload</h3>
+                          <h1><i class="fa fa-picture-o"></i></h1>
+                          <div class="droppable-standard-upload">
+                            <p>or</p>
+                            <a href="#" class="droppable-browse-button button">Browse</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="droppable-controls">
+                        <button id="edit-field-image-und-0-upload-button" name="field_image_und_0_upload_button" value="Upload" type="submit" class="form-submit ajax-processed">Upload</button>
+                      </div>
+
+                      <!-- END OUTPUT from 'sites/all/modules/dragndrop_upload/modules/dragndrop_upload_image/templates/dnd-upload-droppable-area-image.tpl.php' -->
+
+
+
+                      <!-- THEME DEBUG -->
+                      <!-- CALL: theme('dnd_upload_standard_upload') -->
+                      <!-- BEGIN OUTPUT from 'sites/all/modules/dragndrop_upload/modules/dragndrop_upload_element/templates/dnd-upload-standard-upload.tpl.php' -->
+                      <div class="droppable-standard-upload-hidden">
+                        <input type="file" id="edit-field-image-und-0-upload" name="files[field_image_und_0]" size="22" class="form-file">
+                      </div>
+
+                      <!-- END OUTPUT from 'sites/all/modules/dragndrop_upload/modules/dragndrop_upload_element/templates/dnd-upload-standard-upload.tpl.php' -->
+
+                      <input type="hidden" name="field_image[und][0][fid]" value="0">
+                      <input type="hidden" name="field_image[und][0][display]" value="1">
+                    </div>
+                  </div>
+                  <div class="description">
+                    <span data-tooltip="" data-options="disable-for-touch:true" class="has-tip tip-top" title="Upload your best photo. Remember we eats with our eyes first, so make it look delicious :)Files must be less than 10 MB.Allowed file types: png gif jpg jpeg.Images must be between 500x500 and 1600x1600 pixels.">More information?</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="field-type-image field-name-field-image field-widget-dragndrop-upload-image form-wrapper" id="edit-field-image">
+              <div style="display: block;">
+                <div id="edit-field-image-und-0-ajax-wrapper">
+                  <div class="form-item form-type-dragndrop-upload form-item-field-image-und-0">
+                    <label for="edit-field-image-und-0-upload">Featured Image
+                      <span class="form-required" title="This field is required.">*</span>
+                    </label>
+                    <div class="image-widget form-managed-file clearfix">
+                      <div class="image-preview">
+                        <img src="http://lightning.dd:8083/sites/default/files/styles/large/public/recipeupload/tumblr_np985p8aZq1qfo9ixo1_1280.jpg?itok=ezm_qP82" width="480" height="360" alt="">
+                      </div>
+                      <div class="image-widget-data">
+                        <span class="file">
+                          <img class="file-icon" alt="Image icon" title="image/jpeg" src="/modules/file/icons/image-x-generic.png"> <a href="http://lightning.dd:8083/sites/default/files/recipeupload/tumblr_np985p8aZq1qfo9ixo1_1280.jpg" type="image/jpeg; length=100981">tumblr_np985p8aZq1qfo9ixo1_1280.jpg</a></span>
+                        <span class="file-size">(98.61 KB)</span>
+                        <button id="edit-field-image-und-0-remove-button" name="field_image_und_0_remove_button" type="button" rel="tooltip" data-placement="bottom" class="form-submit ajax-processed" data-original-title="Remove this image"><i class="fa fa-times"></i></button>
+                        <input type="hidden" name="field_image[und][0][fid]" value="48">
+                        <input type="hidden" name="field_image[und][0][display]" value="1">
+                        <input type="hidden" name="field_image[und][0][width]" value="800">
+                        <input type="hidden" name="field_image[und][0][height]" value="600">
+                      </div>
+                    </div>
+                    <div class="description">
+                      <span data-tooltip="" data-options="disable-for-touch:true" class="has-tip tip-top" title="Upload your best photo. Remember we eats with our eyes first, so make it look delicious :)">More information?</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="ajax-new-content" style="display: inline;"></span>
+              </div>
+            </div>
+
+
+            <div class="field-type-list-float field-name-field-prep-time field-widget-options-select form-wrapper" id="edit-field-prep-time">
+              <div class="form-item form-type-select form-item-field-prep-time-und">
+                <label for="edit-field-prep-time-und">Prep Time </label>
+                <select id="edit-field-prep-time-und" name="field_prep_time[und]" class="form-select">
+                  <option value="_none">- None -</option>
+                  <option value="1">15 min</option>
+                  <option value="2" selected="selected">30 min</option>
+                  <option value="3">1 hour</option>
+                  <option value="4">over 1 hour</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-type-list-integer field-name-field-cook-time field-widget-options-select form-wrapper" id="edit-field-cook-time">
+              <div class="form-item form-type-select form-item-field-cook-time-und">
+                <label for="edit-field-cook-time-und">Cook Time </label>
+                <select id="edit-field-cook-time-und" name="field_cook_time[und]" class="form-select">
+                  <option value="_none">- None -</option>
+                  <option value="1">15 min</option>
+                  <option value="2" selected="selected">30 min</option>
+                  <option value="3">1 hour</option>
+                  <option value="4">over 1 hour</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-type-text-long field-name-field-hot-tips field-widget-text-textarea form-wrapper" id="edit-field-hot-tips">
+              <div id="field-hot-tips-add-more-wrapper">
+                <div class="text-format-wrapper">
+                  <div class="form-item form-type-textarea form-item-field-hot-tips-und-0-value">
+                    <label for="edit-field-hot-tips-und-0-value">Hot tips </label>
+                    <div class="form-textarea-wrapper">
+                      <textarea class="text-full form-textarea resize-vertical" id="edit-field-hot-tips-und-0-value" name="field_hot_tips[und][0][value]" cols="60" rows="5"></textarea>
+                    </div>
+                  </div>
+                  <div class="filter-wrapper form-wrapper" id="edit-field-hot-tips-und-0-format"></div>
+                  <div class="description">
+                    <span data-tooltip="" data-options="disable-for-touch:true" class="has-tip tip-top" title="What are your secret tips to make this dish amazing? ">More information?</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+      <input type="hidden" name="changed" value="">
+      <input type="hidden" name="form_build_id" value="form-uHxilv5c5T2EBE77TLdGaqjReSzWckxeEIwnEglLhAk">
+      <input type="hidden" name="form_token" value="Tj_Kp7iSvt5GkChLaXEx94cjdQs6lQFKhayCKcGENWs">
+      <input type="hidden" name="form_id" value="recipe_node_form">
+      <h2 class="element-invisible">Vertical Tabs</h2>
+      <div class="vertical-tabs-panes vertical-tabs-processed">
+        <input class="vertical-tabs-active-tab" type="hidden" name="additional_settings__active_tab" value="">
+      </div>
+      <div class="form-actions form-wrapper" id="edit-actions">
+        <button class="secondary button radius form-submit" id="edit-submit" name="op" value="Save" type="submit">Save</button>
+        <button id="edit-preview" name="op" value="Preview" type="submit" class="form-submit">Preview</button>
+      </div>
+      <!-- END OUTPUT from 'sites/all/themes/zurb_foundation/ds_layouts/zf_2col_stacked/zf-2col-stacked.tpl.php' -->
+<!--
+    </div>
+  </form>
+ -->
+  <!-- END OUTPUT from 'sites/all/themes/lightningdemo/templates/block.tpl.php' -->
+
+
+  <!-- END OUTPUT from 'sites/all/themes/lightningdemo/templates/region.tpl.php' -->
+<!--
+</div>
+ -->
+ <section class="container mag-featured-products">
+
+   {% include 'components/product_footer.twig' %}
+
+ </section>
+ <!-- .products-footer -->
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "styleguide_base.twig" %}
+  {% block hero %}
+    <section class="hero-bg">
+      <div class="banner-content-wrap">
+        <div class="row">
+          <div class="panel radius large-6 large-offset-6">
+            <h3 class="title-uppercase">JOIN THE MAGGI COMMUNITY</h3>
+            <p>Save favourite recipes, ask questions, add ratings, share your own recipes plus more tasty extras.</p>
+            <p>Already registered? <a href="#" class="left-peel">Login Here</a></p>
+            <h4 class="title-uppercase">Get started now...</h4>
+            <a href="#" class="btn btn-social btn-facebook btn-fill"><i class="fa fa-facebook-square"></i> JOIN WITH FACEBOOK</a> - or - <a href="#" class="btn btn-primary btn-fill"><i class="fa fa-envelope"></i> JOIN WITH EMAIL</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .hero-bg -->
+
+    {% include 'includes/searchblock.twig' %}
+    <!-- .search-panel -->
+
+  {% endblock %}
+
+
+  {% block content %}
+
+    <section class="mag-featured-news">
+      <div class="row">
+        {% for article in content.articles %}
+          {% if loop.index < 2 %}
+           {% include 'components/feature_news.twig' with article only %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+    <!-- .section-1 -->
+
+    <section class="mag-featured-dish">
+      <div class="row">
+        {% include 'components/feature_recipe_card.twig' %}
+      </div>
+    </section>
+    <!-- .section-2 -->
+
+    <!-- Grab the recipe cards for the homepage -->
+    <section class="mag-featured-recipes">
+      <div class="row">
+        <h2 class="text-primary">FEATURED RECIPES</h2>
+        <ul class="small-block-grid-3">
+
+          {% for recipe in content.recipes %}
+            {% if loop.index < 7 %}
+            <li>
+              {% include 'components/recipe_card_new.twig' with recipe only %}
+            </li>
+            {% endif %}
+          {% endfor %}
+
+        </ul>
+      </div>
+    </section>
+    <!-- .featured-recipes-grid -->
+    <section class="container mag-featured-products">
+
+      {% include 'components/product_footer.twig' %}
+
+    </section>
+    <!-- .products-footer -->
+  {% endblock %}

@@ -1,0 +1,97 @@
+{% extends "styleguide_base.twig" %}
+  {% block hero %}
+    <section class="hero-bg ">
+      <div class="banner-content-wrap">
+        <div class="row">
+          <div class="large-6 large-offset-3 text-center">
+            <h2 class="page-header alternate title-uppercase">THE LATEST NEWS </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .hero-bg -->
+
+  {% endblock %}
+
+
+
+
+  {% block content %}
+    <section class="mag-featured-news">
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="quaternary-features-region clearfix">
+
+
+
+            {% include 'components/feature_news.twig' %}
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- .section-1 -->
+
+    <section class="container ">
+
+          <!--NEWS FILTER-->
+          <div class="row">
+            <div class="column small-12 medium-8">
+
+               
+                <ul class="tabs" data-tab role="tablist" >
+                  <li class="tab-title active" role="presentation" ><a href="" alt="">TAT CA</a></li>
+                  <li class="tab-title"><a href="" alt="">SU KIEN</a></li>
+                  <li class="tab-title"><a href="" alt="">KHUYEN MAI</a></li>
+                  <li class="tab-title"><a href="" alt="">BAN TIN MAGGI</a></li>
+                </ul>
+
+                
+
+            </div>
+            <div class="column medium-4">
+
+                <div class="row collapse postfix-round search-wrap">
+                  <div class="small-9 columns">
+                    <input type="text" placeholder="Value">
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="#" class="button postfix"><i class="fa fa-search"></i></a>
+                  </div>
+                </div>
+              
+            </div>
+
+          </div>
+
+          <!--// NEWS FILTER-->
+
+          <div class="tabs-content content-load">
+
+            <br/>
+            <br/>
+
+          {% for post in content.articles %}
+          <div class="row">
+            {% include 'components/news.twig' with post only %}
+              </div>
+          {% endfor %}
+
+
+
+          <div class="text-center">
+
+              <a href="#" class="" >Tai them + </a>
+
+          </div>  
+
+
+        </div>
+
+
+
+
+    </section>
+    <!-- .products-footer -->
+  {% endblock %}

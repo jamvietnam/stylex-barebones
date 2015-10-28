@@ -1,0 +1,18 @@
+- title: Home
+  path: /
+- title: About Us
+  path: /about
+- title: Recipes
+  path: /recipes
+- title: Recipe
+  path: /recipe
+- title: Recipe Add
+  path: /recipe_add
+- title: News
+  path: /news
+- title: News Detail
+  path: /news-detail
+- title: Forum
+  path: /forum
+- title: Forum
+  path: /forum-detail

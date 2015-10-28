@@ -1,0 +1,55 @@
+{% extends "styleguide_base.twig" %}
+  {% block hero %}
+    <section class="hero-bg">
+      <div class="banner-content-wrap">
+        <div class="row">
+          <div class="large-6 large-offset-3 text-center">
+            <h3 class="title-uppercase">RECIPES SECTION</h3>
+            <p>Find tasty inspiration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- .hero-bg -->
+    {% include 'includes/searchblock.twig' %}
+    <!-- .search-panel -->
+
+  {% endblock %}
+
+
+  {% block content %}
+  <!-- Grab the recipe cards for the homepage -->
+  <section class="mag-featured-recipes">
+
+    <div class="row">
+      <div class="medium-8 column">
+        <h2 class="text-primary">RECIPES ARCHIVE</h2>
+      </div>
+      <div class="medium-3 medium-offset-1 column">
+        <a href="#" class="button button-maggi right z-depth-2">SUBMIT A RECIPE</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="recipes-panel-wrapper z-depth-5">
+        <ul class="medium-block-grid-3">
+
+          {% for post in content.recipes %}
+            <li>
+              {% include 'components/recipe_card_new.twig' with post only %}
+            </li>
+          {% endfor %}
+
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+    <section class="container mag-featured-products">
+
+      {% include 'components/product_footer.twig' %}
+
+    </section>
+    <!-- .products-footer -->
+{% endblock %}

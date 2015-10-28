@@ -1,0 +1,11 @@
+{
+  "name": "foundationstrap_style_guide",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation",
+    "bootstrap-sass-official": "~3.3.5",
+    "font-awesome": "~4.4.0",
+    "modernizr": "2.8.2",
+    "masonry": "~3.3.2"
+  }
+}

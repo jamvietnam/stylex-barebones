@@ -1,0 +1,109 @@
+<div class="card recipe-card">
+
+  <div class="image">
+
+    <img alt="{{ title }}" src="{{ image }}"/>
+    <div class="filter">
+      <button class="btn btn-neutral btn-simple" type="button">
+        <i class="fa fa-bookmark-o"></i>
+        Bookmark
+      </button>
+      <button class="btn btn-neutral btn-simple" type="button">
+        <i class="fa fa-align-left"></i>
+        Read recipe
+      </button>
+    </div>
+
+  </div>
+  <div class="content">
+    <p class="category">{{ category }}</p>
+    <a class="card-link" href="#">
+      <h4 class="title">{{ title }}</h4>
+    </a>
+
+    <div class="footer">
+
+      <div class="author">
+        <a class="card-link" href="#">
+          <img alt="{{ author }}." class="avatar" src="includes/gsdp/assets/img/default-avatar.png">
+          <span>
+            {{ author }}</span>
+        </a>
+      </div>
+      <div class="stats pull-right">
+        <i class="fa fa-clock-o"></i>
+        {{ cooktime }}
+      </div>
+
+    </div>
+    <hr>
+    <div class="footer">
+      <div class="field field-name-field-rating field-type-fivestar field-label-above field-wrapper quickedit-processed quickedit-field" data-quickedit-field-id="node/39/field_rating/und/full">
+        <div class="field-label">Rating:&nbsp;</div>
+        <div class="field-items">
+          <div class="field-item even">
+            <form accept-charset="UTF-8" action="/content/fere-gilvus" class="fivestar-widget" id="fivestar-custom-widget" method="post">
+              <div>
+                <div class="clearfix fivestar-average-text fivestar-average-stars fivestar-form-item fivestar-default fivestar-processed">
+                  <div class="form-item form-type-fivestar form-item-vote">
+                    <div class="form-item form-type-select form-item-vote">
+                      <select class="form-select ajax-processed" id="edit-vote--4" name="vote" style="display: none;">
+                        <option value="-">Select rating</option>
+                        <option value="20">Give it 1/5</option>
+                        <option value="40">Give it 2/5</option>
+                        <option value="60">Give it 3/5</option>
+                        <option selected="selected" value="80">Give it 4/5</option>
+                        <option value="100">Give it 5/5</option>
+                      </select>
+                      <div class="fivestar-widget clearfix fivestar-widget-5">
+                        <div class="star star-1 odd star-first on">
+                          <a href="#20" title="Give it 1/5">Give it 1/5</a>
+                        </div>
+                        <div class="star star-2 even on">
+                          <a href="#40" title="Give it 2/5">Give it 2/5</a>
+                        </div>
+                        <div class="star star-3 odd on">
+                          <a href="#60" title="Give it 3/5">Give it 3/5</a>
+                        </div>
+                        <div class="star star-4 even on">
+                          <a href="#80" title="Give it 4/5">Give it 4/5</a>
+                        </div>
+                        <div class="star star-5 odd star-last">
+                          <a href="#100" title="Give it 5/5">Give it 5/5</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <button class="fivestar-submit form-submit" id="edit-fivestar-submit" name="op" type="submit" value="Rate">Rate</button>
+                <input name="form_build_id" type="hidden" value="form-J8SqZ63zcizAKIoFcTNddLnGu1KKiCCbM-jC49dsW4M">
+                <input name="form_token" type="hidden" value="q1VjlmuEImfe8BdRaXmCLmB07VCx7k274i8gxX7PNu4">
+                <input name="form_id" type="hidden" value="fivestar_custom_widget">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--       <div class="ratings">
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+  <i class="fa fa-star"></i>
+</div>
+ -->
+      <div class="stats pull-right">
+        <i class="fa fa-facebook-square"></i>
+        23
+      </div>
+
+      <div class="stats pull-right">
+        <i class="fa fa-heart"></i>
+        221
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="7px" height="16px" viewBox="0 0 7 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>social-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="social-connect" sketch:type="MSLayerGroup" transform="translate(-63.000000, 0.000000)" fill="#CC2229">
+            <g id="social-facebook" transform="translate(63.000000, 0.000000)" sketch:type="MSShapeGroup">
+                <path d="M4.66666667,5.33333333 L4.66666667,3.74583333 C4.66666667,3.02916667 4.80520833,2.66666667 5.77864583,2.66666667 L7,2.66666667 L7,0 L4.96197917,0 C2.46458333,0 1.640625,1.30833333 1.640625,3.55416667 L1.640625,5.33333333 L0,5.33333333 L0,8 L1.640625,8 L1.640625,16 L4.66666667,16 L4.66666667,8 L6.72291667,8 L7,5.33333333 L4.66666667,5.33333333 L4.66666667,5.33333333 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

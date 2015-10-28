@@ -1,0 +1,400 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $header-font-weight;
+  font-family: $header-font-family;
+  text-transform: uppercase;
+}
+
+//form override fix from the framework
+form {
+  margin: 0;
+}
+
+.clearing-close {
+  top: 70px;
+}
+.collapse {
+  display: block;
+}
+//set the NavBar module font in the tray so all the items fit horizontally at 1400px
+#navbar-administration {
+  .navbar-tray a {
+    font-size: rem-calc(13px);
+  }
+  .navbar-tray-horizontal > .navbar-lining {
+    padding-right: 3em;
+  }
+}
+
+.row {
+  max-width: $row-width;
+}
+
+.clearing-assembled .clearing-container .visible-img {
+  background: #333;
+  overflow: hidden;
+  height: 90%;
+}
+
+.left-off-canvas-menu {
+  background: $secondary-color;
+  .button-group {
+    li {
+      &:first-child .button {
+        margin-top: rem-calc(10px);
+      }
+      .button {
+        margin: rem-calc(5px 10px);
+        width: rem-calc(225px);
+      }
+    }
+  }
+  .workbench-info-block {
+    background: #e7e7e7;
+    list-style: none;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin: rem-calc(10px 15px 10px 10px);
+    border: 2px solid $primary-color;
+    font-size: rem-calc(14px);
+    color: #333;
+    line-height: rem-calc(25px);
+  }
+}
+
+.move-right a.exit-off-canvas {
+  @include box-shadow(none);
+}
+
+.left-off-canvas-toggle {
+  text-align: left;
+  font-size: rem-calc(14px) !important;
+  padding-left: rem-calc(45px) !important;
+  &:before {
+    content: url(../images/moderate.png);
+    position: absolute;
+    top: rem-calc(15px);
+    left: rem-calc(10px);
+  }
+  span {
+    font-size: rem-calc(12px);
+  }
+}
+
+.activestate {
+  font-style: italic;
+}
+
+//fix broke IPE from styles in the framework
+.panels-ipe-linkbar li {
+  list-style: none;
+  display: inline;
+}
+
+a {
+  color: $maggi-primary;
+  transition: all 150ms linear;
+  &:hover {
+    color: $maggi-primary-shade;
+  }
+}
+
+// hide non useful buttons on the hompeage when logged in
+#navbar-administration.navbar-oriented .navbar-bar {
+  z-index: 10000;
+}
+
+//hero
+.hero-bg {
+  background-image: url(../images/my_tasty_dish.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: rem-calc(600px);
+  @media #{$small-only} {
+    height: rem-calc(385px);
+  }
+  position: relative;
+  width: 100%;
+  // margin-bottom: rem-calc(30px);
+  .banner-content-wrap {
+    position: relative;
+    top: 40%;
+    @media #{$small-only} {
+      padding-top: 10px;
+    }
+    .panel {
+    }
+
+  }
+}
+
+// intro text
+.intro-text h1 {
+  text-align: center;
+}
+
+//tabs
+.lightning-tabs.row {
+  margin-top: rem-calc(30px);
+  dl.tabs {
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 1px;
+    dd {
+      &.active {
+        background: $primary-color;
+        &:after {
+          @media #{$large-up} {
+            content: url(../images/tab-active.png);
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+          }
+        }
+        a {
+          background: $primary-color;
+          color: $dark-bg;
+          padding: rem-calc(16px);
+        }
+      }
+      a {
+        background: $dark-bg;
+        color: $secondary-color;
+        text-align: center;
+        font-size: rem-calc(20px);
+      }
+    }
+  }
+}
+
+//bottom lightning features
+.feature-links {
+  h2 {
+    font-size: 1.5em;
+    @media #{$small-only} {
+      font-size: 1.2em;
+    }
+    margin-bottom: 1em;
+    border-bottom: 1px solid $primary-color;
+  }
+  li {
+    text-align: center;
+    padding: 0;
+    padding-top: rem-calc(5px);
+    a {
+      font-size: rem-calc(30px);
+      color: $secondary-color;
+      font-weight: 100;
+      display: block;
+      &:hover {
+        color: $primary-color;
+      }
+      &:hover:after {
+        content: url(../images/go-arrow.png);
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+      &:before {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: rem-calc(15px);
+      }
+      @media #{$small-only} {
+        font-size: rem-calc(16px);
+      }
+    }
+    a.editors {
+      &:before {
+        content: url(../images/edit.png);
+      }
+    }
+    a.workflows {
+      &:before {
+        content: url(../images/flow.png);
+      }
+    }
+    a.preview {
+      &:before {
+        content: url(../images/preview.png);
+      }
+    }
+    a.layout {
+      &:before {
+        content: url(../images/layout.png);
+      }
+    }
+  }
+}
+
+.l-main {
+  margin-bottom: rem-calc(40px);
+}
+
+.l-footer.panel {
+  margin-bottom: 0;
+  padding-top: rem-calc(20px);
+  padding-bottom: rem-calc(20px);
+}
+
+//secondary page
+
+.main-title-area {
+  padding-top: rem-calc(20px);
+  padding-bottom: rem-calc(20px);
+  margin-bottom: rem-calc(20px);
+  padding-left: rem-calc(15px);
+  h1 {
+    font-weight: 700;
+    color: $secondary-color;
+  }
+}
+
+.alternate-left.row {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $primary-color;
+  h2 {
+    @media #{$small-only} {
+      font-size: rem-calc(26px);
+      text-align: center;
+      margin-top: rem-calc(15px);
+    }
+  }
+  .clearing-thumbs {
+    margin-top: 10px;
+  }
+}
+
+.alternate-right.row {
+  margin-bottom: 30px;
+  border-bottom: 1px solid $primary-color;
+  h2 {
+    @media #{$small-only} {
+      font-size: rem-calc(26px);
+      text-align: center;
+      margin-top: rem-calc(15px);
+    }
+  }
+  .clearing-thumbs {
+    margin-top: 10px;
+  }
+}
+
+.row.last {
+  border-bottom: none;
+}
+
+.node-unpublished {
+  background-color: inherit;
+}
+
+// Fix for navbar positioning when using zurb_foundation
+body {
+  position: inherit;
+}
+
+.l-header {
+    background: $primary-color;
+}
+.contain-to-grid {
+  background: $primary-color;
+}
+body {
+  background: url(../images/bg-texture/paper-sktech.jpg) repeat center center;
+}
+
+// .top-bar-section {
+//   .main-nav li.menu_icon {
+//     a.menu_icon {
+//       display: block;
+//       padding-top: 55px;
+//       background-repeat: no-repeat;
+//       background-position: center top;
+//     }
+//
+//     a.menu-1532 {
+//       background-image: url(../images/icons/news-icon.png);
+//     }
+//     a.menu-1533 {
+//       background-image: url(../images/icons/product-icon.png);
+//     }
+//     a.menu-1534 {
+//       background-image: url(../images/icons/recipe-icon.png);
+//     }
+//     &:hover {
+//       background:
+//     }
+//   }
+// }
+
+.mag-featured-news {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: url('../images/bg2.jpg') repeat;
+}
+
+.mag-featured-dish {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: url('../images/my_tasty_dish.jpg') repeat;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.33), 0px 0px 18px 1px rgba(0,0,0,0.18);
+  z-index: 4;
+  position: relative;
+}
+
+.mag-featured-products {
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+}
+
+.mag-featured-recipes {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: url('../images/wood_light_tile_h.jpg') repeat;
+}
+
+.card .image {
+    width: 100%;
+    overflow: hidden;
+    height: 340px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.card .overtop {
+  position: relative;
+  top: 260px;
+  z-index: 4;
+  width: 100%;
+  padding: 15px 15px 10px 15px;
+  .avatar {
+    display: block;
+  }
+  div {
+    display: inline-block;
+  }
+}
+
+.card .filter {
+  background-color: rgba(0,0,0,.48);
+}
+
+.search-panel-setion {
+  background: url('../images/wood_white_tile.jpg') repeat;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23), 0px 0px 12px 0px rgba(0,0,0,0.14);
+  z-index: 2;
+  position: relative;
+}
+.card-feature-dish {
+  background: $primary-color;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23), 0px 0px 12px 0px rgba(0,0,0,0.14);
+}
+
+.dropdown-menu {
+  transition: all 300ms linear;
+}
+
+.button {
+
+}

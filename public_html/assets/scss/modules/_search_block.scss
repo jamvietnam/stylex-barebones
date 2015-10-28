@@ -1,0 +1,16 @@
+.search-panel-section {
+  background: url('../images/bg-texture/wood_white_v.jpg') repeat;
+}
+
+.search-cat-nav {
+  @include icon-bar();
+  background: transparent;
+  a, label {
+    background: transparent;
+    color: $maggi-primary;
+    &:hover, label {
+      color: $maggi-primary-shade;
+      background: rgba(255,255,255,0.4);
+    }
+  }
+}

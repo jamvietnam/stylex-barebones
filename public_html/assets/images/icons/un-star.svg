@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>un-star</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="card" sketch:type="MSLayerGroup" transform="translate(-76.500000, -410.000000)" fill="#CC2229">
+            <g id="card_footer" transform="translate(16.000000, 407.192482)" sketch:type="MSShapeGroup">
+                <g id="stars" transform="translate(0.040668, 2.838663)">
+                    <path d="M77.6179075,5.7622833 L71.371589,5.7622833 L69.4430068,0.0928937146 L67.5134212,5.7622833 L61.2681062,5.7622833 L66.3203493,9.26542978 L64.3917671,14.9348194 L69.4430068,11.4307152 L74.49525,14.9348194 L72.5666678,9.26542978 L77.6179075,5.7622833 L77.6179075,5.7622833 Z M72.5867363,12.4276467 L69.4430068,10.246081 L66.2992774,12.4266891 L67.5003767,8.89768559 L64.3566473,6.71995047 L68.242911,6.71995047 L69.4430068,3.19190465 L70.6431027,6.71995047 L74.5293664,6.71995047 L71.385637,8.89864326 L72.5867363,12.4276467 L72.5867363,12.4276467 Z" id="un-star"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,98 @@
+.droppable-browse-button {
+  @extend button;
+  @extend .round;
+  text-transform: uppercase;
+  font-family: $roboto-condensed;
+  font-weight: 700;
+  font-size: rem-calc(16);
+  background-color: $maggi-secondary;
+  color: black;
+  padding: rem-calc(12) rem-calc(20);
+  text-decoration: none;
+  &:hover {
+    color: black;
+    background-color: $maggi-secondary-shade;
+    text-decoration: none;
+  }
+}
+
+.droppable {
+  float: none;
+  padding: 2px;
+  border: 6px solid $maggi-secondary;
+  text-align: center;
+  margin: 5px 0;
+  width: 100%;
+}
+.droppable-standard-upload-hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.droppable-preview>div {
+  display: none;
+}
+
+.droppable-preview-file {
+  border: 1px solid #ccc;
+  margin: 1px;
+  line-height: 20px;
+  height: 20px;
+  position: relative;
+}
+
+.droppable-standard-upload {
+  min-height: 75px;
+}
+
+.droppable-controls {
+  clear: left;
+}
+
+.droppable-message {
+  line-height: 75px;
+}
+
+.image-widget-data {
+  span.file img {
+    display: none;
+  }
+  button {
+  }
+}
+.preview-remove {
+  cursor: pointer;
+  width: 20px;
+  background-color: #ccc;
+  z-index: 2;
+  position: absolute;
+  right: 0;
+}
+
+.preview-filesize {
+  font-size: 75%;
+  color: #555;
+}
+
+.droppable-controls input,
+.form-managed-file .droppable-controls input.progress-disabled {
+  display: none;
+}
+
+.image-preview {
+  float: none;
+  padding: 0;
+  border: 6px solid $maggi-secondary;
+  text-align: center;
+  margin: 5px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-preview img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
