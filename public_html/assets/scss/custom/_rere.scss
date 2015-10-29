@@ -18,6 +18,17 @@
         img {
             width: 100%;
         }
+        .footer {
+          position: relative;
+          margin: -50px 0 0 16px;
+          z-index: 10;
+          a{
+            color: $maggi-secondary;
+            &:hover {
+              color: $maggi-secondary-shade;
+            }
+          }
+        }
     }
     .filter{
         position: absolute;
@@ -556,3 +567,16 @@
 /*   background: URL('../images/bg-texture/linedpaper.jpg') repeat top center;
 padding: rem-calc(40px);
  */}
+
+
+.questions-box {
+
+  table {
+     width:100%;
+     background-color: #fff;
+     td  {
+       background: #fff;
+       border-bottom: 1px solid $blue-grey-100;
+     }
+   }
+ }

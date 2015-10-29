@@ -22362,6 +22362,17 @@ input.ct-red + span + label + span.switch-right {
 .card .image img {
   width: 100%;
 }
+.card .image .footer {
+  position: relative;
+  margin: -50px 0 0 16px;
+  z-index: 10;
+}
+.card .image .footer a {
+  color: #ffed00;
+}
+.card .image .footer a:hover {
+  color: #ddac00;
+}
 .card .filter {
   position: absolute;
   z-index: 2;
@@ -22875,6 +22886,15 @@ input, .signup-panel span {
    */
 }
 
+.questions-box table {
+  width: 100%;
+  background-color: #fff;
+}
+.questions-box table td {
+  background: #fff;
+  border-bottom: 1px solid #cfd8dc;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: "Roboto Condensed", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -22904,7 +22924,7 @@ form {
   max-width: 75rem;
 }
 
-.row.row-fullwidth {
+.row-fullwidth {
   width: 100%;
   max-width: 100%;
 }
